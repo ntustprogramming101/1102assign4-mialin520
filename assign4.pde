@@ -181,14 +181,10 @@ void setup() {
       }
     }
   }
-  for (int i=0; i<6; i++) {
-    for (int j=0; j<2; j++) {
+  for (int i=0; i<24; i++) {
+    for (int j=0; j<floor(random(1,3)); j++) {
       int a=floor(random(8));
-      int b=floor(random(4*i, 4*(i+1)-1));
-      if (b==0) {
-        b++;
-      }
-      soilHealth[a][b]=0;
+      soilHealth[a][i]=0;
     }
   }
 
